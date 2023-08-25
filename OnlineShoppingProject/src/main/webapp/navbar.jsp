@@ -37,7 +37,7 @@ if(session.getAttribute("email")==null){
 			<li>
 				<div class="dropdown">
 					<button class="profile-button">
-						<i class="fa-solid fa-user icon-large"></i>
+						<i class="fa-solid fa-user icon-large"></i>&nbsp;&nbsp;<i class="fa-solid fa-sort-down"></i>
 					</button>
 					<div class="dropdown-options">
 						<form action ="logout" method="post">
