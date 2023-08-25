@@ -1,0 +1,185 @@
+*{
+    top: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/* admin navbar starts */
+.topbar{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+.topbar .topbarWrapper{
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logout-button{
+	border: none;
+  	border-radius: 0;
+  	padding: 10px 20px;
+  	background-color: white;
+  	color: #000;
+  	font-weight:999;
+  	cursor: pointer;
+}
+.logout-button:hover{
+	background-color: darkblue;
+	color:white;
+}
+.topbar .topbarWrapper .adminlogo{
+    font-weight: bold;
+    font-size: 20px;
+    color: darkblue;
+    cursor: pointer;
+}
+/* andmin navbar ends  */
+.admin-container{
+    display: flex;
+    overflow: hidden;
+}
+
+/* admin sidebar  */
+.admin-container .sidebar{
+    flex: 1;
+    height: calc(100vh  - 50px);
+    background-color: rgb(251, 251, 255);
+    position: sticky;
+    top: 50px;
+}
+
+.admin-container .sidebar .sidebarWrapper{
+    padding: 29px;
+    columns: #555;
+}
+.admin-container .sidebar .sidebarWrapper .sidebarMenu{
+    margin-bottom: 10px;
+}
+.sidebarMenu .sidebarTitle{
+    font-size: 30px;
+    color: rgb(187, 186, 186);
+}
+.sidebarMenu .sidebarList{
+    list-style: none;
+    padding: 5px;
+
+}
+.sidebarMenu .sidebarList .sidebarListItem{
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.sidebarMenu .sidebarList a{
+	text-decoration: none;
+}
+.sidebarMenu .sidebarList .sidebarListItem:hover{
+    color: aqua;
+    background-color: black;
+}
+
+/* admin sidebar ends  */
+
+
+
+.admin-container .otherpages{
+    flex:5;
+    height: calc(95vh  - 50px);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.otherpages h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* table  */
+
+.records {
+    margin-top: 20px;
+    /* overflow: auto; */
+   width: 100%;
+}
+
+.otherpages .records .addProductButton{
+    margin: 10px;
+    background-color: rgb(132, 132, 233);
+    color: white;
+    font-weight: 999;
+
+}
+
+
+/* table */
+
+.otherpages .records .table-container{
+    max-height: 370px;
+    margin: 10px;
+    overflow:auto;
+}
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  
+}
+thead tr th{
+	background: teal;
+	color:white;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide any overflow */
+  text-overflow: ellipsis; /* Add ellipsis when content overflows */
+  width: 140px; /* Set the maximum width for all cells */
+}
+th:hover, td:hover {
+  overflow: visible;
+  white-space: normal;
+  max-width: none;
+}
+button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    border-radius: 20px;
+} 
+.deleteicon{
+    color: red;
+    margin: 0 10px;
+    font-size: 20px;
+}
+.deleteicon:hover{
+    background-color: red;
+    padding: 10px;
+    color: white;
+}
+.updateicon{
+    color: rgb(47, 234, 47);
+    margin: 0 10px;
+    font-size: 20px;
+}
+.updateicon:hover{
+    background-color:  rgb(47, 234, 47) ;
+    padding: 10px;
+    color: white;
+}
+.order-button{
+	border: none;
+	border-radius: 0;
+	background-color: white;
+	cursor: pointer;
+}
+

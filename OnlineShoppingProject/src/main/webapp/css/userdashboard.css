@@ -1,0 +1,342 @@
+*{
+    top: 0;
+    padding: 0;
+   
+}
+body, html {
+    overflow: hidden; /* Hide the scrollbars */
+}
+.user-container{
+    display: flex;
+}
+
+/* admin sidebar  */
+.user-container .sidebar{
+    flex: 1;
+    height: calc(100vh  - 50px);
+    background-color: rgb(251, 251, 255);
+    position: sticky;
+    top: 50px;
+}
+
+.user-container .sidebar .sidebarWrapper{
+    padding: 29px;
+    columns: #555;
+}
+.user-container .sidebar .sidebarWrapper .sidebarMenu{
+    margin-bottom: 10px;
+}
+.sidebarMenu .sidebarTitle{
+    font-size: 30px;
+    color: rgb(187, 186, 186);
+}
+.sidebarMenu .sidebarList{
+    list-style: none;
+    padding: 5px;
+
+}
+.sidebarMenu .sidebarList .sidebarListItem{
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.sidebarMenu .sidebarList a{
+	text-decoration: none;
+	color:#65237e;
+}
+.sidebarMenu .sidebarList .sidebarListItem:hover{
+    color: aqua;
+    background-color: black;
+}
+
+/* user sidebar ends  */
+
+
+
+.user-container .otherpages{
+    flex:5;
+    height: calc(95vh  - 50px);
+    overflow: auto;
+    max-height: calc(95vh - 50px);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.otherpages h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valid{
+	color: green;
+	font-weight:bold;
+}
+.invalid{
+	color: red;
+	font-weight:bold;
+	padding: 5px;
+}
+/* user details page */
+/* Style for the user details section */
+.user-details {
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center; /* Center align the content */
+}
+
+.user-details h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 28px;
+}
+
+.user-details p {
+    margin: 15px 0;
+    color: #555;
+    font-size: 18px;
+    display: flex; /* Use flex to align labels and values */
+    align-items: center; /* Vertically align the labels and values */
+}
+
+.user-details p span {
+    font-weight: bold;
+    margin-right: 10px; /* Add space after the label */
+}
+
+.editUserDetails {
+    margin-top: 20px; /* Add spacing between details and button */
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center; /* Center align the button */
+    display: block; /* Make the button a block element to center it */
+    margin: 0 auto; /* Center the button horizontally */
+    transition: background-color 0.2s;
+}
+
+.editUserDetails:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* edit user dashboard form  */
+/* Style for the user details form */
+.user-details-form {
+	width:50%;
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center; /* Center align the content */
+}
+
+.user-details-form h2 {
+    margin: 15px;
+    color: #333;
+    font-size: 28px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Align labels to the left */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    font-size: 18px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/*to show or not show icon using password*/
+.password-input {
+    position: relative;
+    display:inline;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.form-group-inline {
+    width: calc(50% - 10px); /* Adjust width as needed */
+    margin-bottom: 20px;
+}
+
+.form-group-inline label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    font-size: 18px;
+}
+
+.form-group-inline input,
+.form-group-inline select,
+.form-group select{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+
+.edit-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.2s;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/*user order details*/
+.user-order-info{
+    flex: 3;
+
+}
+.user-order-product{
+display: flex;
+justify-content: space-between;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+border-radius: 5px;
+margin:20px;
+}
+.user-order-details{
+    flex: 3;
+    display: flex;
+    padding: 20px;
+}
+.user-order-img{
+	 width: 200px;
+    height: 200px;
+}
+.user-order-details img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.order-name-status{
+	display: flex;
+	flex-direction: column;
+}
+.order-name-status span{
+    margin: 20px;
+    font-size: 20px;
+    max-width: 280px;
+    min-width: 280px;
+}
+.total-product{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+}
+.total-product .product-amount{
+    margin: 5px;
+    font-size: 24px;
+}
+.quantity-symbol{
+	padding:2px;
+}
+.quantity-symbol:hover{
+	color:white;
+	background-color: black;
+}
+.product-price{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 200;
+}
+.remove-btn button, .download-button{
+    margin-top: 10px;
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(87, 87, 236);
+    color:  red;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.download-button{
+	color:  rgb(87, 87, 236);
+}
+
+.remove-btn button:hover{
+    cursor: pointer;
+    background-color: red ;
+    color: white;
+}
+.download-button:hover{
+    cursor: pointer;
+	background-color:  rgb(87, 87, 236);
+    color: white;
+}
+hr{
+    background-color: #eee;
+    height: 1px;
+    border: none;
+}

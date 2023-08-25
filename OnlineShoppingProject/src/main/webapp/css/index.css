@@ -1,0 +1,280 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	height: 100%;
+}
+
+/* navbar */
+.navbar {
+	padding: 20px 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	z-index: 999;
+	top: 0;
+	background-color: #f3f4f6;
+	box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo h1 {
+	color: #424144;
+	border-bottom: 1px solid #fd6561;
+}
+
+.navbar .menu li {
+	list-style: none;
+	display: inline-block;
+}
+
+.navbar .menu li a, .logout-button {
+	display: block;
+	margin-left: 20px;
+	color: #424144;
+	border-bottom: 4px solid transparent;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.navbar .menu li a i {
+	color: #fd6561;
+}
+
+.logout-button {
+	border: none;
+	border-radius: 0;
+	background-color: #f3f4f6;
+	cursor: pointer;
+}
+
+.navbar .menu li a:hover, .logout-button:hover {
+	border-bottom: 4px solid #f63e4e;
+}
+
+/* dropdown */
+.dropdown {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+  }
+.dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color:#f3f4f6;
+  }
+  
+  .dropdown:hover .dropdown-options {
+    display: block;
+    padding:10px 10px 10px 0;
+  }
+  .profile-button{
+    border: none;
+	border-radius: 0;
+	background-color: #f3f4f6;
+	cursor: pointer;
+  }
+  .icon-large {
+    font-size: 24px;
+    color: #fd6561;
+}
+
+
+/* navbar ends  */
+
+/* content starts */
+.content {
+	background-image: url(sports.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	color: white;
+	height: 100vh;
+}
+
+.content h1 {
+	font-size: 40px;
+}
+
+.content p {
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.content button {
+	margin-top: 30px;
+	padding: 15px 30px;
+	border: none;
+	background: #f63e4e;
+	color: white;
+	font-size: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.pheading {
+	text-align: center;
+	margin: 50px 0;
+	color: #424144;
+}
+/* content end  */
+
+/* Products */
+.sec {
+	padding: 10px 5%;
+}
+
+.products {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.products .card {
+	width: 310px;
+	background: #f5f5f5;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.products .card .card-link {
+	text-decoration: none;
+	color: black;
+}
+
+.products .card img {
+	height: 250px;
+	width: 100%;
+	object-fit: contain;
+	background-color: white;
+}
+
+.products .card .desc {
+	padding: 5px 20px;
+	opacity: 0.8;
+}
+
+.products .card .title {
+	font-weight: 900;
+	font-size: 20px;
+	color: #424144;
+	padding: 0 20px;
+}
+
+.products .card .box {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	padding: 20px;
+	columns: #f63e4e;
+	font-size: 25px;
+	font-weight: bold;
+	color: #fd6561;
+}
+
+.products .card .box .btn {
+	font-size: 13px;
+	color: #f63e4e;
+	padding: 10px 18px;
+	font-weight: 900;
+	border: 1px solid #f63e4e;
+	border-radius: 20px;
+}
+
+.products .card .box .btn:hover {
+	cursor: pointer;
+	background-color: #f63e4e;
+	color: white;
+}
+
+.popup-container {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #f1f1f1;
+	padding: 20px;
+	text-align: center;
+	display: none; /* Initially hide the popup */
+}
+
+/* footer */
+footer {
+	margin-top: 20px;
+	display: flex;
+	background-color: gray;
+	color: white;
+}
+
+footer .left {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+footer .left .description {
+	margin: 20px 0px;
+}
+
+footer .left .socialcontainer {
+	display: flex;
+}
+
+footer .left .socialcontainer .socialicon {
+	width: 15px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 15px;
+	border-radius: 50%;
+	color: white;
+	margin-right: 20px;
+}
+
+footer .center {
+	flex: 1;
+	padding: 20px;
+}
+
+footer .center h1 {
+	margin-bottom: 30px;
+}
+
+footer .center ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+footer .center ul li {
+	margin-bottom: 10px;
+}
+
+footer .right {
+	flex: 1;
+	padding: 20px;
+}
+
+footer .right h1 {
+	margin-bottom: 20px;
+}
+
+footer .right .contactitems {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+}

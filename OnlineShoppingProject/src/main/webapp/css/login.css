@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background-color: white;
+    width: 330px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    
+}
+h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+form input,form select{
+    width: 92%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;
+}
+input[type = submit]{
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: rgb(17, 107, 135);
+    color: white;
+    cursor: pointer;
+}
+input[type = submit]:hover{
+    background: rgba(24, 155, 194, 0.877);
+}
+input:focus{
+    border: 1px solid rgb(192, 192, 192);
+}
+form span{
+    font-size: 1rem;
+    margin-top: 1.4rem;
+
+}
+form .valid{
+	color: green;
+	font-style:bold;
+}
+form .invalid{
+	color: red;
+	font-style:bold;
+	padding: 5px;
+}
+
+form span a{
+    text-decoration: none;
+
+}
+.recover{
+    text-align: right;
+    font-size: 0.9rem;
+    margin: 0.3rem 1.4rem 0 0;
+}
+.recover a{
+    text-decoration: none;
+}
+
